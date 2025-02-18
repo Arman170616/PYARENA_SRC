@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { PhoneIcon as WhatsappIcon } from "lucide-react"
 
 export default function CourseDetailsPage({ params }: { params: { slug: string } }) {
   // In a real application, you would fetch the course details based on the slug
@@ -39,8 +41,14 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
           </ul>
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 flex flex-col sm:flex-row gap-4">
         <Button size="lg">Enroll Now</Button>
+        <Button size="lg" variant="outline" asChild>
+          <Link href="https://wa.me/8801811302984" target="_blank" rel="noopener noreferrer">
+            <WhatsappIcon className="mr-2 h-5 w-5" />
+            Connect on WhatsApp
+          </Link>
+        </Button>
       </div>
     </div>
   )
