@@ -7,9 +7,9 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
   const course = {
     name: "Python Fundamentals",
     description: "Learn the basics of Python programming",
-    price: 49.99,
+    price: 6000,
     duration: "6 weeks",
-    instructor: "John Doe",
+    instructor: "M M Arman Hossain",
   }
 
   return (
